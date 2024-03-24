@@ -1,0 +1,402 @@
+.App {
+  margin: 0 auto;
+  padding: 0;
+  scroll-behavior: smooth;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.homepage-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #b514fd 1.42%, #5f75f5 97.8%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-contact-input-wrapper {
+  background-color: white;
+}
+
+.custom-contact-input {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  border: none !important;
+  font-size: 14px;
+  color: #000;
+  background: transparent !important;
+}
+
+.custom-contact-input:hover {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.custom-contact-input:focus {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.custom-contact-input:active {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.custom-contact-input::placeholder {
+  color: #222222;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.custom-btn {
+  position: relative;
+  transition: all 1.5s;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  background: #03045e;
+  color: #fff;
+}
+
+.custom-btn .custom-btn-inner {
+  position: relative;
+  z-index: 99;
+}
+
+.custom-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #007ea7;
+  transition: all 0.6s;
+}
+
+.custom-btn:hover {
+  color: #fff;
+}
+
+.custom-btn:hover:after {
+  width: 100%;
+  background: #007ea7;
+  color: white;
+}
+
+.custom-btn2 {
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 0.7s ease;
+  z-index: 1;
+  background: #ffffff;
+  color: #000;
+  border: 1px solid #000000;
+}
+
+.custom-btn2:hover {
+  border: 1px solid #1f999b;
+  color: #fff;
+}
+
+.custom-btn2:before,
+.custom-btn2:after {
+  color: #fff;
+  background: #1f999b;
+  transition: 0.7s ease;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid #1f999b;
+}
+
+.middle-out:before {
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+}
+
+.middle-out:hover:before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 120px;
+  z-index: 999;
+  top: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+}
+
+.shrink {
+  height: 90px;
+  background: #fff;
+  z-index: 999;
+}
+
+.active-profile-sidebar {
+  /* margin-top: 90px; */
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 1);
+  transition: all 0.5s;
+}
+
+.not-active-profile-sidebar {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  transition: all 0.5s;
+}
+
+.profile-sidebar-inner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.inputs-z {
+  position: relative;
+  z-index: 99;
+}
+
+/* hero */
+
+.hero-horizontal-border {
+  /* border: 1px solid; */
+  border: 0.8px solid rgba(0, 0, 0, 0.4);
+}
+
+.hero-verticle-border {
+  border: 0.8px solid rgba(0, 0, 0, 0.4);
+}
+
+.bg-hero {
+  background: linear-gradient(360deg, #0faff81f 12%, #ffffff 88%);
+}
+
+.image-animation {
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-animation:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+
+.hero-title-animation {
+  animation: slideFromLeft 5s ease-in-out 1;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-1000px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  75% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* working */
+
+.working-horizontal-border {
+  border: 0.8px solid rgba(12, 179, 255, 0.92);
+}
+
+.working-verticle-border {
+  border-left: 0.8px solid rgba(12, 179, 255, 0.92);
+}
+
+.working-center-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .bg-solutions {
+  background: url("./assets/images/bg-solutions.png");
+  background-position: 100%;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  height: 50%;
+} */
+
+/* footer */
+
+.bg-footer {
+  background: #bbbbbb05;
+  border-top: 1px solid #ececec;
+}
+
+/* media queries */
+
+@media screen and (min-width: 1920px) {
+  .bg-hero-form-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1919px) and (min-width: 1801px) {
+  .bg-hero-form-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1701px) {
+  .working-responsiove-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .w-resp-right1 {
+    width: 90%;
+  }
+
+  .w-resp-right2 {
+    width: 50%;
+  }
+
+  .w-resp-right3 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1536px) {
+  .w-resp-left {
+    width: 95%;
+  }
+
+  .w-resp-right1 {
+    width: 90%;
+  }
+
+  .w-resp-right2 {
+    width: 60%;
+  }
+
+  .w-resp-right3 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1535px) and (min-width: 1280px) {
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+  .custom-contact-input {
+    font-size: 15px;
+  }
+
+  .custom-contact-input::placeholder {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 900px) {
+  .custom-contact-input {
+    font-size: 15px;
+  }
+
+  .custom-contact-input::placeholder {
+    font-size: 15px;
+  }
+
+  header {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+  .custom-contact-input {
+    font-size: 15px;
+  }
+
+  .custom-contact-input::placeholder {
+    font-size: 15px;
+  }
+
+  header {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 426px) {
+  .custom-contact-input {
+    font-size: 14px;
+  }
+
+  .custom-contact-input::placeholder {
+    font-size: 14px;
+  }
+
+  header {
+    height: 90px;
+  }
+
+  .shrink {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .custom-contact-input {
+    font-size: 14px;
+  }
+
+  .custom-contact-input::placeholder {
+    font-size: 14px;
+  }
+
+  header {
+    height: 90px;
+  }
+
+  .shrink {
+    height: 70px;
+  }
+}
