@@ -6,7 +6,7 @@ import circle from "../../assets/images/working-circle.png";
 
 const Working = () => {
   return (
-    <div className="w-full homepage-container px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[213px] py-[50px] md:py-[70px] lg:py-[80px] xl:py-[70px] 2xl:py-[90px] mx-auto">
+    <div className="w-full homepage-container px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[213px] py-[50px] md:py-[70px] lg:py-[80px] xl:py-[70px] 2xl:py-[90px] mx-auto overflow-hidden">
       <p className="mx-auto w-[100%] md:w-[90%] lg:w-[100%] text-center lg:text-left font-montserrat font-semibold text-[26px] md:text-[32px] lg:text-[24px] xl:text-[32px] 2xl:text-[40px]">
         How it works?
       </p>
@@ -28,7 +28,13 @@ const Working = () => {
                 <div className="working-verticle-border h-full "></div>
               </div>
             </div>
-            <div className="w-resp-left w-full lg:w-[100%] 2xl:w-[75%] lg:pb-[70px] 2xl:pb-[150px] mt-[20px] lg:mt-0">
+            <div
+              className="w-resp-left w-full lg:w-[100%] 2xl:w-[75%] lg:pb-[70px] 2xl:pb-[150px] mt-[20px] lg:mt-0"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1300"
+              data-aos-offset="300"
+            >
               <p className="mx-auto w-[100%] text-center lg:text-left font-montserratAlter font-semibold text-[26px] md:text-[32px] lg:text-[24px] xl:text-[32px] 2xl:text-[38px]">
                 Acquire <span className="text-[#00A4EE]">Data</span>
               </p>
@@ -50,7 +56,13 @@ const Working = () => {
               </p>
             </div>
           </div>
-          <div className="w-full lg:w-[40%]">
+          <div
+            className="w-full lg:w-[40%]"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1500"
+            data-aos-offset="300"
+          >
             <img
               src={working1}
               alt="working1"
@@ -75,7 +87,13 @@ const Working = () => {
                 <div className="working-verticle-border h-full "></div>
               </div>
             </div>
-            <div className="w-resp-left w-full lg:w-[100%] 2xl:w-[75%] lg:pb-[70px] 2xl:pb-[150px] mt-[20px] lg:mt-0">
+            <div
+              className="w-resp-left w-full lg:w-[100%] 2xl:w-[75%] lg:pb-[70px] 2xl:pb-[150px] mt-[20px] lg:mt-0"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1300"
+              data-aos-offset="300"
+            >
               <p className="mx-auto w-[100%] text-center lg:text-left font-montserratAlter font-semibold text-[26px] md:text-[32px] lg:text-[24px] xl:text-[32px] 2xl:text-[38px]">
                 Filtering{" "}
                 <span className="text-[#00A4EE]">Data & Cleaning</span>
@@ -97,7 +115,13 @@ const Working = () => {
               </p>
             </div>
           </div>
-          <div className="w-full lg:w-[40%]">
+          <div
+            className="w-full lg:w-[40%]"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1500"
+            data-aos-offset="300"
+          >
             <img
               src={working2}
               alt="working2"
@@ -122,7 +146,13 @@ const Working = () => {
                 <div className="working-verticle-border h-full "></div>
               </div>
             </div>
-            <div className="w-resp-left w-full lg:w-[100%] 2xl:w-[75%] lg:pb-[70px] 2xl:pb-[150px] mt-[20px] lg:mt-0">
+            <div
+              className="w-resp-left w-full lg:w-[100%] 2xl:w-[75%] lg:pb-[70px] 2xl:pb-[150px] mt-[20px] lg:mt-0"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1300"
+              data-aos-offset="300"
+            >
               <p className="mx-auto w-[100%] text-center lg:text-left font-montserratAlter font-semibold text-[26px] md:text-[32px] lg:text-[24px] xl:text-[32px] 2xl:text-[38px]">
                 Process <span className="text-[#00A4EE]">Data</span>
               </p>
@@ -142,7 +172,13 @@ const Working = () => {
               </p>
             </div>
           </div>
-          <div className="w-full lg:w-[40%]">
+          <div
+            className="w-full lg:w-[40%]"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1500"
+            data-aos-offset="300"
+          >
             <img
               src={working3}
               alt="working3"

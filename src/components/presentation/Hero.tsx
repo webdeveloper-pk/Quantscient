@@ -15,28 +15,34 @@ const Hero = () => {
             style={{ zIndex: 2 }}
           >
             <div className="flex flex-col lg:flex-row gap-x-[23px]">
-              <div className="flex flex-row justify-center lg:justify-start lg:flex-col gap-[25px]">
-                <div>
+              <div
+                className="flex flex-row justify-center lg:justify-start lg:flex-col gap-[25px]"
+                data-aos="fade-up"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="2000"
+                data-aos-offset="-100"
+              >
+                <a href="#">
                   <img
                     src={insta}
                     alt="insta"
                     className="min-w-[40px] min-h-[40px] max-w-[40px] max-h-[40px] 2xl:min-w-[53px] 2xl:min-h-[53px] 2xl:max-w-[53px] 2xl:max-h-[53px]"
                   />
-                </div>
-                <div>
+                </a>
+                <a href="#">
                   <img
                     src={telegram}
                     alt="telegram"
                     className="w-[40px] h-[40px] 2xl:min-w-[53px] 2xl:min-h-[53px] 2xl:max-w-[53px] 2xl:max-h-[53px]"
                   />
-                </div>
-                <div>
+                </a>
+                <a href="#">
                   <img
                     src={github}
                     alt="git"
                     className="w-[40px] h-[40px] 2xl:min-w-[53px] 2xl:min-h-[53px] 2xl:max-w-[53px] 2xl:max-h-[53px]"
                   />
-                </div>
+                </a>
               </div>
               <div className="w-[60%] md:w-[40%] lg:w-auto mx-auto lg:mx-0 hero-verticle-border mt-[20px] mb-[20px] lg:mb-0 lg:mt-0"></div>
               <div>
@@ -44,7 +50,7 @@ const Hero = () => {
                   className="mx-auto w-[100%] md:w-[90%] lg:w-[100%] text-center lg:text-left leading-[40px] 2xl:leading-[50px] font-montserrat font-semibold text-[26px] md:text-[32px] lg:text-[24px] xl:text-[32px] 2xl:text-[40px]"
                   data-aos="fade-right"
                   data-aos-easing="ease-in-out"
-                  data-aos-duration="1000"
+                  data-aos-duration="1200"
                   data-aos-offset="-100"
                 >
                   <span className="text-[#00A4EE] mr-2">Hedge-Fund-Grade</span>
@@ -89,7 +95,12 @@ const Hero = () => {
             </div>
           </div>
           <div className="w-full md:w-[60%] lg:w-[35%] 2xl:w-[40%]">
-            <div className="">
+            <div
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1200"
+              data-aos-offset="-100"
+            >
               <img
                 src={hero}
                 alt="hero"

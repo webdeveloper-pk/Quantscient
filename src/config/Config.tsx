@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PreLoader from "components/preLoader/PreLoader";
 const Home = lazy(() => import("../pages/Home"));
+const About = lazy(() => import("../pages/About"));
 
 const Config = () => {
   React.useEffect(() => {
@@ -19,6 +20,7 @@ const Config = () => {
       <Suspense fallback={<PreLoader />}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Suspense>
     </Router>

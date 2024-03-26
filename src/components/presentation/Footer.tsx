@@ -28,13 +28,13 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:gap-x-[70px] 2xl:gap-x-[120px] gap-y-[50px]">
             <ul className="w-full flex flex-col items-center lg:items-start gap-y-[34px] font-montserrat font-semibold text-[16px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] uppercase">
               <li>
-                <a className="text-black hover:text-[#00A4EE]" href="#about">
+                <a className="text-black hover:text-[#00A4EE]" href="/about">
                   About Us
                 </a>
               </li>
               <li>
                 <a className="text-black hover:text-[#00A4EE]" href="#what">
-                  WHat we are?
+                  What we are?
                 </a>
               </li>
             </ul>

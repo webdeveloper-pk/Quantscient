@@ -41,18 +41,20 @@ const Navbar = () => {
         <div className="mx-auto flex flex-row justify-between homepage-container">
           <div className="w-full lg:w-auto flex flex-row justify-center items-center">
             <div className="w-full flex flex-row justify-between lg:justify-start items-center gap-x-[18px] lg:gap-x-0">
-              <div className="flex items-center gap-x-[15px] lg:gap-x-[20px]">
-                <a href="/">
-                  <img
-                    src={logo}
-                    alt="logo"
-                    className="w-[40px] h-[33px] lg:w-[50px] lg:h-[43px] 2xl:w-[60px] 2xl:h-[53px]"
-                  />
-                </a>
-                <p className="font-montserrat font-semibold text-black text-[15px] md:text-[15px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] uppercase">
-                  Quantscient
-                </p>
-              </div>
+              <a href="/">
+                <div className="flex items-center gap-x-[15px] lg:gap-x-[26px]">
+                  <div>
+                    <img
+                      src={logo}
+                      alt="logo"
+                      className="w-[40px] h-[33px] lg:w-[50px] lg:h-[43px] 2xl:w-[70px] 2xl:h-[63px]"
+                    />
+                  </div>
+                  <p className="font-montserrat font-semibold text-black text-[16px] md:text-[18px] lg:text-[26px] xl:text-[30px] 2xl:text-[34px]">
+                    Quantscient
+                  </p>
+                </div>
+              </a>
               <div>
                 <button
                   onClick={toggleSidebar}
