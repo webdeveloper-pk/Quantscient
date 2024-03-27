@@ -256,14 +256,6 @@ header {
   transform: translate(-50%, -50%);
 }
 
-/* .bg-solutions {
-  background: url("./assets/images/bg-solutions.png");
-  background-position: 100%;
-  background-size: 100% 60%;
-  background-repeat: no-repeat;
-  height: 50%;
-} */
-
 .about-main-border {
   border-bottom: 1px solid rgba(202, 202, 202, 0.4);
 }
@@ -273,7 +265,7 @@ header {
 }
 
 .video-setion2-bg {
-  background: linear-gradient(360deg, #0faff81f 12%, #ffffff 88%);
+  background: linear-gradient(180deg, #0faff81f 12%, #ffffff 88%);
 }
 
 .video-setion3-bg {
