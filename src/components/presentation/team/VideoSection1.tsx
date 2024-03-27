@@ -1,23 +1,34 @@
 import React, { useState, useEffect, useRef } from "react";
-import video from "../../../assets/videos/dummy.mp4";
+import play from "../../../assets/icons/play.svg";
 
-export const VideoSection = () => {
-  const [isLoading, setIsLoading] = useState(false);
-
-  const videoRef = useRef(null);
-
-  const showModal = () => {
-    setIsLoading(true);
-  };
+const VideoSection1 = () => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [showControls, setShowControls] = useState<boolean>(false);
+  const [isPaused, setIsPaused] = useState<boolean>(true);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.pause();
+    if (videoRef?.current) {
+      setIsPaused(videoRef?.current?.paused);
     }
   }, []);
 
+  const toggleControls = () => {
+    setShowControls(!showControls);
+    if (videoRef?.current) {
+      if (videoRef?.current?.paused) {
+        videoRef?.current?.play();
+      } else {
+        videoRef?.current?.pause();
+      }
+    }
+  };
+
+  const handleVideoPause = () => {
+    setShowControls(false);
+  };
+
   return (
-    <div className="w-full homepage-container homepage-padding px-[20px] md:px-[50px] lg:px-[70px] xl:px-[110px] 2xl:px-[213px] pb-[50px] lg:pb-[40px] 2xl:pb-[40px] mx-auto overflow-hidden">
+    <div className="w-full homepage-container homepage-padding px-[20px] md:px-[50px] lg:px-[70px] xl:px-[110px] 2xl:px-[213px] mx-auto overflow-hidden">
       {/* first */}
       <div className="flex flex-col items-center lg:flex-row lg:items-start lg:gap-x-[25px] gap-y-[30px] rounded-[20px] xl:rounded-[28px] px-[20px] 2xl:px-[25px] pt-[50px] 2xl:pt-[70px] pb-[30px] video-setion1-bg">
         <div
@@ -27,26 +38,22 @@ export const VideoSection = () => {
           data-aos-duration="1000"
           data-aos-offset="-100"
         >
-          {/* <img
-              src={video1}
-              alt="Ernest Lim"
-             
-            /> */}
-
           <video
-            controls
+            controls={showControls}
             ref={videoRef}
-            className="w-[100%] md:w-[80%] lg:w-[100%] 2xl:w-[100%] mx-auto"
+            className="w-[100%] md:w-[80%] lg:w-[100%] 2xl:w-[100%] mx-auto rounded-[11px]"
+            onClick={toggleControls}
+            onPause={handleVideoPause}
           >
             <source
-              src={`${video}`}
+              src={require("../../../assets/videos/dummy.mp4")}
               type="video/mp4"
-              className="mb-6"
               width="100%"
               height="100%"
             />
           </video>
-          {/* <div
+          {!showControls && isPaused && (
+            <div
               style={{
                 position: "absolute",
                 top: "50%",
@@ -55,18 +62,15 @@ export const VideoSection = () => {
                 zIndex: 1,
                 cursor: "pointer",
               }}
-              onClick={showModal}
+              onClick={toggleControls}
             >
-              {isLoading ? (
-                ""
-              ) : (
-                <img
-                  src={play}
-                  alt="play"
-                  className="w-[16px] md:w-[20px] lg:w-[25px] h-auto -mt-4 md:-mt-2 lg:mt-0"
-                />
-              )}
-            </div> */}
+              <img
+                src={play}
+                alt="play"
+                className="w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] 2xl:w-[100px] 2xl:h-[100px]"
+              />
+            </div>
+          )}
         </div>
         <div className="w-full lg:w-[64%] xl:w-[66%] 2xl:w-[67%] video-right">
           <div
@@ -105,9 +109,8 @@ export const VideoSection = () => {
           </div>
         </div>
       </div>
-      {/* second */}
-
-      {/* third */}
     </div>
   );
 };
+
+export default VideoSection1;
