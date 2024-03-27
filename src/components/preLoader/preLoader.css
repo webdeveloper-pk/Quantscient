@@ -35,7 +35,7 @@
   -ms-animation: cssload-rotate-one 1.5s linear infinite;
   -webkit-animation: cssload-rotate-one 1.5s linear infinite;
   -moz-animation: cssload-rotate-one 1.5s linear infinite;
-  border-bottom: 3px solid #1f999b;
+  border-bottom: 3px solid #95268f;
 }
 
 .preloader-orbit-loading .cssload-inner.cssload-two {
@@ -46,7 +46,7 @@
   -ms-animation: cssload-rotate-two 1.5s linear infinite;
   -webkit-animation: cssload-rotate-two 1.5s linear infinite;
   -moz-animation: cssload-rotate-two 1.5s linear infinite;
-  border-right: 3px solid #f8623b;
+  border-right: 3px solid rgba(0, 164, 238, 1);
 }
 
 .preloader-orbit-loading .cssload-inner.cssload-three {
@@ -57,7 +57,7 @@
   -ms-animation: cssload-rotate-three 1.5s linear infinite;
   -webkit-animation: cssload-rotate-three 1.5s linear infinite;
   -moz-animation: cssload-rotate-three 1.5s linear infinite;
-  border-top: 3px solid #252323;
+  border-top: 3px solid #95268f;
 }
 
 @keyframes cssload-rotate-one {
