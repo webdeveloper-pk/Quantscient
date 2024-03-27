@@ -6,7 +6,7 @@ import circle from "../../assets/images/working-circle.png";
 
 const Working = () => {
   return (
-    <div className="w-full homepage-container px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[213px] py-[50px] md:py-[70px] lg:py-[80px] xl:py-[70px] 2xl:py-[90px] mx-auto overflow-hidden">
+    <div className="w-full homepage-container homepage-padding px-[20px] md:px-[50px] lg:px-[70px] xl:px-[110px] 2xl:px-[213px] py-[50px] md:py-[70px] lg:py-[80px] xl:py-[70px] 2xl:py-[90px] mx-auto overflow-hidden">
       <p className="mx-auto w-[100%] md:w-[90%] lg:w-[100%] text-center lg:text-left font-montserrat font-semibold text-[26px] md:text-[32px] lg:text-[24px] xl:text-[32px] 2xl:text-[40px]">
         How it works?
       </p>

@@ -3,7 +3,7 @@ import React from "react";
 const Join = () => {
   return (
     <div className="bg-hero">
-      <div className="w-full homepage-container px-[30px] md:px-[60px] lg:px-[120px] xl:px-[170px] 2xl:px-[245px] pt-[40px] md:pt-[40px] lg:pt-[45px] xl:pt-[50px] 2xl:pt-[50px] pb-[30px] lg:pb-[30px] 2xl:pb-[30px] mx-auto overflow-hidden">
+      <div className="w-full homepage-container homepage-padding px-[30px] md:px-[60px] lg:px-[90px] xl:px-[120px] 2xl:px-[245px] pt-[40px] md:pt-[40px] lg:pt-[45px] xl:pt-[50px] 2xl:pt-[50px] pb-[30px] lg:pb-[30px] 2xl:pb-[30px] mx-auto overflow-hidden">
         <p
           className="text-center lg:text-left mb-[19px] font-montserrat font-semibold text-[18px] md:text-[17px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px]"
           data-aos="fade-up"

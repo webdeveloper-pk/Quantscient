@@ -6,7 +6,7 @@ import vision from "../../../assets/icons/vision.svg";
 
 const AboutMain = () => {
   return (
-    <div className="w-full homepage-container px-[30px] md:px-[60px] lg:px-[120px] xl:px-[170px] 2xl:px-[245px] pt-[70px] md:pt-[70px] lg:pt-[80px] xl:pt-[100px] 2xl:pt-[120px] pb-[50px] lg:pb-[50px] 2xl:pb-[54px] mx-auto overflow-hidden">
+    <div className="w-full homepage-container homepage-padding px-[30px] md:px-[60px] lg:px-[90px] xl:px-[130px] 2xl:px-[245px] pt-[70px] md:pt-[70px] lg:pt-[80px] xl:pt-[100px] 2xl:pt-[120px] pb-[50px] lg:pb-[50px] 2xl:pb-[54px] mx-auto overflow-hidden">
       <div className="flex flex-col gap-y-[50px] 2xl:gap-y-[66px]">
         <div>
           <div className="flex flex-col lg:flex-row gap-x-[25px] gap-y-[20px] lg:gap-y-[25px] items-center lg:items-start pb-[15px] lg:pb-[15px] about-main-border">

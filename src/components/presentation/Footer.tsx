@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-footer overflow-hidden">
       <div
-        className="w-full homepage-container px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[213px] pt-[30px] 2xl:pt-[40px] pb-[50px] 2xl:pb-[70px] mx-auto"
+        className="w-full homepage-container homepage-padding px-[20px] md:px-[50px] lg:px-[70px] xl:px-[110px] 2xl:px-[213px] pt-[30px] 2xl:pt-[40px] pb-[50px] 2xl:pb-[70px] mx-auto"
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
         data-aos-duration="1200"
@@ -33,7 +33,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a className="text-black hover:text-[#00A4EE]" href="#what">
+                <a className="text-black hover:text-[#00A4EE]" href="/team">
                   What we are?
                 </a>
               </li>

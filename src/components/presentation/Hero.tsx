@@ -8,7 +8,7 @@ import github from "../../assets/icons/github.svg";
 const Hero = () => {
   return (
     <div className="bg-hero mt-[90px] md:mt-[100px] lg:mt-[120px]" id="hero">
-      <div className="w-full homepage-container px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[213px] pt-[70px] md:pt-[100px] lg:pt-[100px] xl:pt-[100px] 2xl:pt-[130px] mx-auto">
+      <div className="w-full homepage-container homepage-padding px-[20px] md:px-[50px] lg:px-[70px] xl:px-[110px] 2xl:px-[213px] pt-[70px] md:pt-[100px] lg:pt-[100px] xl:pt-[100px] 2xl:pt-[130px] mx-auto">
         <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-between lg:items-center gap-y-[50px] lg:gap-x-[70px] xl:gap-x-[100px] 2xl:gap-x-[170px] text-black">
           <div
             className="w-full lg:w-[65%] 2xl:w-[60%] relative"
