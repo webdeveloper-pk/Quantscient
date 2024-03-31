@@ -1,6 +1,6 @@
 import React from "react";
 import hero from "../../assets/images/hero.png";
-import heroStyle from "../../assets/images/hero-style.png";
+import heroStyle from "../../assets/images/9.gif";
 import insta from "../../assets/icons/insta.svg";
 import telegram from "../../assets/icons/telegram.svg";
 import github from "../../assets/icons/github.svg";
@@ -110,7 +110,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <img src={heroStyle} alt="hero-style" className="" />
+        <img src={heroStyle} alt="hero-style" className="w-[100%] h-[170px] md:h-[220px] lg:h-[250px] xl:h-[300px] 2xl:h-[450px]" />
     </div>
   );
 };

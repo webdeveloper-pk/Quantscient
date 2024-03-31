@@ -1,7 +1,7 @@
 import React from "react";
-import working1 from "../../assets/images/working1.png";
-import working2 from "../../assets/images/working2.png";
-import working3 from "../../assets/images/working3.png";
+import working1 from "../../assets/images/working1.gif";
+import working2 from "../../assets/images/working2.gif";
+import working3 from "../../assets/images/working3.gif";
 import circle from "../../assets/images/working-circle.png";
 
 const Working = () => {
@@ -66,7 +66,7 @@ const Working = () => {
             <img
               src={working1}
               alt="working1"
-              className="w-resp-right1 w-[80%] md:w-[60%] lg:w-[80%] 2xl:w-[80%] mx-auto"
+              className="w-resp-right1 w-[100%] md:w-[70%] lg:w-[90%] 2xl:w-[100%] mx-auto"
             />
           </div>
         </div>
@@ -125,7 +125,7 @@ const Working = () => {
             <img
               src={working2}
               alt="working2"
-              className="w-resp-right2 w-[50%] md:w-[40%] lg:w-[40%] 2xl:w-[45%] mx-auto"
+              className="w-resp-right2 w-[90%] md:w-[60%] lg:w-[80%] xl:w-[75%] 2xl:w-[90%] mx-auto"
             />
           </div>
         </div>
@@ -182,7 +182,7 @@ const Working = () => {
             <img
               src={working3}
               alt="working3"
-              className="w-resp-right3 w-[60%] md:w-[50%] lg:w-[70%] 2xl:w-[80%] mx-auto"
+              className="w-resp-right3 w-[90%] md:w-[70%] lg:w-[75%] xl:w-[70%] 2xl:w-[100%] mx-auto"
             />
           </div>
         </div>

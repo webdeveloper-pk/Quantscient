@@ -198,7 +198,6 @@ header {
 /* hero */
 
 .hero-horizontal-border {
-  /* border: 1px solid; */
   border: 0.8px solid rgba(0, 0, 0, 0.4);
 }
 
@@ -281,7 +280,88 @@ header {
 
 /* media queries */
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 2751px) {
+  .w-resp-right1 {
+    width: 50%;
+  }
+
+  .w-resp-right2 {
+    width: 40%;
+  }
+
+  .w-resp-right3 {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 2750px) and (min-width: 2451px) {
+  .w-resp-right1 {
+    width: 60%;
+  }
+
+  .w-resp-right2 {
+    width: 50%;
+  }
+
+  .w-resp-right3 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 2450px) and (min-width: 2251px) {
+  .w-resp-right1 {
+    width: 70%;
+  }
+
+  .w-resp-right2 {
+    width: 50%;
+  }
+
+  .w-resp-right3 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 2250px) and (min-width: 2151px) {
+  .w-resp-right1 {
+    width: 80%;
+  }
+
+  .w-resp-right2 {
+    width: 60%;
+  }
+
+  .w-resp-right3 {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 2150px) and (min-width: 2001px) {
+  .w-resp-right1 {
+    width: 90%;
+  }
+
+  .w-resp-right2 {
+    width: 78%;
+  }
+
+  .w-resp-right3 {
+    width: 78%;
+  }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1920px) {
+  .w-resp-right1 {
+    width: 90%;
+  }
+
+  .w-resp-right2 {
+    width: 80%;
+  }
+
+  .w-resp-right3 {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1919px) and (min-width: 1801px) {
@@ -305,6 +385,18 @@ header {
   .video-right {
     width: 60%;
   }
+
+  .w-resp-right1 {
+    width: 90%;
+  }
+
+  .w-resp-right2 {
+    width: 80%;
+  }
+
+  .w-resp-right3 {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1800px) and (min-width: 1701px) {
@@ -323,11 +415,11 @@ header {
   }
 
   .w-resp-right2 {
-    width: 50%;
+    width: 80%;
   }
 
   .w-resp-right3 {
-    width: 70%;
+    width: 80%;
   }
 
   .member-left {
@@ -362,11 +454,11 @@ header {
   }
 
   .w-resp-right2 {
-    width: 60%;
+    width: 80%;
   }
 
   .w-resp-right3 {
-    width: 70%;
+    width: 90%;
   }
 
   .member-left {
