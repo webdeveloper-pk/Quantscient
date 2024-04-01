@@ -56,7 +56,7 @@ const VideoSection3 = () => {
       {/* first */}
       <div className="flex flex-col items-center lg:flex-row lg:items-start lg:gap-x-[46px] 2xl:gap-x-[66px] gap-y-[30px] rounded-[20px] xl:rounded-[28px] px-[20px] 2xl:px-[25px] pt-[50px] 2xl:pt-[70px] pb-[30px] video-setion1-bg">
         <div
-          className="w-full lg:w-[36%] xl:w-[34%] 2xl:w-[33%] video-left"
+          className="w-full lg:w-[36%] xl:w-[34%] 2xl:w-[38%] video-left"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
           data-aos-duration="1000"
@@ -71,7 +71,7 @@ const VideoSection3 = () => {
               onPause={handleVideoPause}
             >
               <source
-                src={require("../../../assets/videos/dummy.mp4")}
+                src={require("../../../assets/videos/AI- Specialist-1.mp4")}
                 type="video/mp4"
                 width="100%"
                 height="100%"
@@ -106,7 +106,7 @@ const VideoSection3 = () => {
               onPause={handleVideoPause2}
             >
               <source
-                src={require("../../../assets/videos/dummy.mp4")}
+                src={require("../../../assets/videos/AI-Specialist-2.mp4")}
                 type="video/mp4"
                 width="100%"
                 height="100%"
@@ -133,7 +133,7 @@ const VideoSection3 = () => {
             )}
           </div>
         </div>
-        <div className="w-full lg:w-[64%] xl:w-[66%] 2xl:w-[67%] video-right lg:pr-[50px] xl:pr-[70px] 2xl:pr-[70px]">
+        <div className="w-full lg:w-[64%] xl:w-[66%] 2xl:w-[62%] video-right lg:pr-[50px] xl:pr-[70px] 2xl:pr-[70px]">
           <div
             data-aos="fade-up"
             data-aos-easing="ease-in-out"

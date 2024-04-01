@@ -71,7 +71,7 @@ const VideoSection1 = () => {
               onPause={handleVideoPause}
             >
               <source
-                src={require("../../../assets/videos/dummy.mp4")}
+                src={require("../../../assets/videos/quant-1.mp4")}
                 type="video/mp4"
                 width="100%"
                 height="100%"
@@ -106,7 +106,7 @@ const VideoSection1 = () => {
               onPause={handleVideoPause2}
             >
               <source
-                src={require("../../../assets/videos/dummy.mp4")}
+                src={require("../../../assets/videos/quant-2.mp4")}
                 type="video/mp4"
                 width="100%"
                 height="100%"
