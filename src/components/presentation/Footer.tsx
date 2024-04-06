@@ -22,7 +22,7 @@ const Footer = () => {
               Quantscient
             </p>
             <p className="hidden lg:block mt-[27px] lg:mt-[22px] 2xl:mt-[27px] font-montserrat font-light text-black text-[15px] md:text-[15px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] uppercase">
-              Quantscient - @ COPYRIGHT RESERVED
+              All Rights Reserved
             </p>
           </div>
           <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:gap-x-[70px] 2xl:gap-x-[120px] gap-y-[50px]">
@@ -34,7 +34,7 @@ const Footer = () => {
               </li>
               <li>
                 <a className="text-black hover:text-[#00A4EE]" href="/team">
-                  What we are?
+                  Our Team
                 </a>
               </li>
             </ul>
