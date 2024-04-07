@@ -30,9 +30,10 @@ const Working = () => {
             </div>
             <div
               className="w-resp-left w-full lg:w-[100%] 2xl:w-[75%] lg:pb-[70px] 2xl:pb-[150px] mt-[20px] lg:mt-0"
-              // data-aos="fade-up"
-              // data-aos-easing="ease-in-out"
-              // data-aos-duration="1300"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="2000"
+              data-aos-delay="300"
               // data-aos-offset="300"
             >
               <p className="mx-auto w-[100%] text-center lg:text-left font-montserratAlter font-semibold text-[26px] md:text-[32px] lg:text-[24px] xl:text-[32px] 2xl:text-[38px]">
@@ -60,7 +61,8 @@ const Working = () => {
             className="w-full lg:w-[40%]"
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
-            data-aos-duration="1500"
+            data-aos-duration="3000"
+            data-aos-delay="600"
             // data-aos-offset="100"
           >
             <img
