@@ -1,36 +1,11 @@
-import React, { useEffect, useRef } from "react";
-import lottie from "lottie-web";
+import React from "react";
 import hero from "../../assets/images/hero.gif";
 import insta from "../../assets/icons/insta.svg";
 import telegram from "../../assets/icons/telegram.svg";
 import github from "../../assets/icons/github.svg";
-import animationJson from "../../utils/animationJson.json";
+import heroWaves from "../../assets/images/hero-style.gif";
 
 const Hero = () => {
-  const animationContainer = useRef(null);
-  const anim = useRef(null);
-
-  useEffect(() => {
-    const animationData = animationJson;
-    const params = {
-      container: animationContainer.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: animationData,
-    };
-
-    anim.current = lottie.loadAnimation(params);
-
-    return () => {
-      anim.current.destroy();
-    };
-  }, []);
-
-  const animationContainerStyle = {
-    opacity: 0.5,
-  };
-
   return (
     <div className="bg-hero mt-[90px] md:mt-[100px] lg:mt-[120px]" id="hero">
       <div className="w-full homepage-container homepage-padding px-[20px] md:px-[50px] lg:px-[70px] xl:px-[110px] 2xl:px-[213px] pt-[70px] md:pt-[100px] lg:pt-[100px] xl:pt-[100px] 2xl:pt-[130px] mx-auto">
@@ -138,11 +113,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="h-auto md:h-[220px] lg:h-[250px] xl:h-[300px] 2xl:h-[450px] overflow-hidden">
-        <div
-          id="lottie"
-          ref={animationContainer}
-          style={animationContainerStyle}
-        ></div>
+        <img src={heroWaves} alt="" className="w-full" />
       </div>
     </div>
   );
